@@ -15,7 +15,7 @@ class UserController {
                 
                 const user = await User.create({name , email, password,status:'active',lastLogin:currentDate.format('yyyy-MM-dd HH:mm:ss')})
 
-                console.log('bpb');
+                console.log('');
                 return res.status(200).json(user)
             }else{
                 return res.status(200).json('false')

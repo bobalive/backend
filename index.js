@@ -14,9 +14,7 @@ const DB_URL = 'mongodb+srv://bob:bob@task4.ibmvypw.mongodb.net/?retryWrites=tru
 const app = express()
 
 
-app.use(cors({
-    origin: 'http://localhost:5173'
-  }));
+app.use(cors());
 app.use(express.json())
 app.use('/api' , router)
 
